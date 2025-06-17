@@ -1,0 +1,78 @@
+body{
+    margin: 20px;
+    background-image: url(/KISHIIII/Pictures/bg.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 40vh;
+    overflow: hidden;
+}
+.ballon_container{
+    position:relative;
+}
+.baloon::before{
+    content: "▲";
+    font-size: 20px;
+    color:hsl(215, 30%, 50%);
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    z-index: -100;
+}
+.baloon {
+    display: inline-block;
+    width: 97px;
+    height: 90px;
+    border-radius:80%;
+    position: relative;
+    box-shadow: inset -10px -10px 0 rgba(0,0,0,0.07);
+    transition: transform 0.5s ease;
+    z-index: 10;
+    transform-origin: bottom center;
+    color: blue;
+    font-weight: bold;
+    font-family: cursive;
+}
+.ballon1 {
+    animation: ballons1 forwards;
+    font-size: 48px;
+}
+.ballon2 {
+    animation: ballons2 forwards;
+    font-size: 48px;
+    top: -7px
+}
+.ballon3 {
+    animation: balloons3 forwards;
+    font-size: 40px;
+    top: -13px;
+}
+@keyframes ballons1{
+    0%{transform: translateY(1vh);opacity: 1;}
+    10%{transform: translateY(100vh) rotate(180deg);opacity: 1;}
+}
+@keyframes ballons2{
+    0%{transform: translateY(1vh);opacity: 1;}
+    10%{transform: translateY(90vh) rotate(360deg);opacity: 1;}
+}
+@keyframes ballons3{
+    0%{transform: translateY(1vh)rotate(360deg);opacity: 1;}
+    10%{transform: translateY(120vh) rotate(180deg);opacity: 1;}
+}
+.ballon1:nth-child(1){background: rgba(255,100,100);animation-duration: 1.0s;left: 53px;}
+.ballon1:nth-child(1)::before{color: rgba(255,100,100);}
+.ballon1:nth-child(2){background: rgba(255,255,100); animation-duration: 4.0s;left: 37px;}
+.ballon1:nth-child(2)::before{color: rgba(255,255,100);}
+.ballon1:nth-child(3){background: rgba(255,255,255);animation-duration: 5.2s;left: 23px;color: black;}
+.ballon1:nth-child(3)::before{color: rgba(255,255,255);}
+.ballon1:nth-child(4){background: purple; animation-duration: 4.2s;left: 10px}
+.ballon1:nth-child(4)::before{color: rgba(255,255,255);}
+.ballon1:nth-child(5){background: green; animation-duration: 3.9s;left: 5px}
+.ballon1:nth-child(5)::before{color: greenyellow;}
+
+.ballon2:nth-child(1){background: rgb(247, 79, 79);animation-duration: 3.2s;left: 30px; top: -8px;}
+.ballon2:nth-child(1)::before{color: rgba(255,100,100);}
+.ballon2:nth-child(2){background: rgb(247, 79, 79);animation-duration: 2.2s;left: 20px; top: -8px;}
+.ballon2:nth-child(2)::before{color: rgb(143, 143, 0);}
+.ballon2:nth-child(3){background: rgb(116, 87, 185);animation-duration: 5.2s;left: 10px;color: black; top: -8px}
