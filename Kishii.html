@@ -1,0 +1,144 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentines</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif
+}
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: black;
+}
+.container{
+width:100%;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center
+}
+h1{
+color:#fff;
+font-size:5vw;
+letter-spacing:2px;
+margin-bottom:60px;
+text-shadow:0 4px 15px rgba(0,0,0,.2)
+}
+.flower{
+position:relative;
+width:220px;
+height:210px;
+transition: 1s
+}
+.petal{
+position:absolute;
+width:83px;
+height:150px;
+background: #c83f49;
+border-radius:50px 50px 0 0;
+top:20px;
+left:65px;
+transform-origin:bottom center;
+transition:.5s
+}
+.petal:nth-child(1){transform:rotate(0deg)}
+.petal:nth-child(2){transform:rotate(45deg)}
+.petal:nth-child(3){transform:rotate(90deg)}
+.petal:nth-child(4){transform:rotate(135deg)}
+.petal:nth-child(5){transform:rotate(180deg)}
+.petal:nth-child(6){transform:rotate(225deg)}
+.petal:nth-child(7){transform:rotate(270deg)}
+.petal:nth-child(8){transform:rotate(315deg)}
+.center{
+position:absolute;
+width:90px;
+height:90px;
+background:#ffd166;
+border-radius:50%;
+top:120px;
+left:65px;
+z-index:2;
+box-shadow:0 0 25px rgba(255,209,102,.7)
+}
+.stem{
+position:absolute;
+width:10px;
+height:180px;
+background:green;
+top:200px;
+left:105px;
+border-radius:10px
+}
+.leaf{
+position:absolute;
+width:120px;
+height:45px;
+background:green;
+border-radius:50%;
+top:260px;
+right: 90px;
+transform:rotate(-30deg)
+}
+.leaf2{
+position:absolute;
+width:100px;
+height:40px;
+background:green;
+border-radius:50%;
+top:300px;
+left:100px;
+transform:rotate(30deg)
+}
+.flower:hover{
+transform:scale(1.08) rotate(5deg)
+}
+.flower:hover .petal{
+background:#ff758f;
+box-shadow:0 0 20px rgba(255,255,255,.6)
+}
+.love{
+margin-top:220px;
+color:#fff;
+font-size:6vw;
+letter-spacing:3px;
+animation:float 3s infinite ease-in-out
+}
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
+100%{transform:translateY(0)}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>The last time na naghimo me san irog sani kay san birth day mo huhu, I promised dati na once mag 1 year kita mahimo me gihapon. So sa birthday mo nalang gihapon^^</h1>
+<div class="flower">
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="center"></div>
+<div class="stem"></div>
+<div class="leaf"></div>
+<div class="leaf2"></div>
+</div>
+<div class="love">Happy Valentines Kishii^^</div>
+</div>
+</body>
+</html>
+
+
